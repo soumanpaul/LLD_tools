@@ -1,0 +1,24 @@
+src/
+├── core/                     # Core domain logic and entities
+│   ├── Document.ts
+│   ├── DocumentElement.ts
+│   ├── elements/
+│   │   ├── TextElement.ts
+│   │   ├── ImageElement.ts
+│   │   ├── NewLineElement.ts
+│   │   └── TabSpaceElement.ts
+│   └── editor/
+│       └── DocumentEditor.ts
+
+├── infrastructure/          # I/O logic like file/db storage
+│   ├── persistence/
+│   │   ├── FileStorage.ts
+│   │   ├── DBStorage.ts
+│   │   └── Persistence.ts
+
+├── app/                     # Application bootstrap, orchestration
+│   └── main.ts              # Entry point
+
+├── shared/                  # Shared utilities, types, constants (optional)
+
+tsconfig.json
